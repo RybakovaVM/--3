@@ -1,0 +1,124 @@
+/* 1-е задание домашки  */
+.clock{
+    position: relative;
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.hours{
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    background-color: blue;
+    left: 50px;
+    top: 20px;
+    animation: t 43200s infinite steps(43200);
+    transform-origin: 0 30px;
+}
+.minutes{
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background-color: rgb(0, 255, 0);
+    left: 51px;
+    top: 10px;
+    animation: t 3600s infinite steps(3600);
+    transform-origin: 0 40px;
+}
+.seconds{
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: rgb(255, 255, 0);
+    left: 52px;
+    animation: t 60s infinite steps(60);
+    transform-origin: 0 50px;
+}
+@keyframes t {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+ /* 2-е задние домашки  */
+/*  
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+  }
+h1{
+     position: absolute;
+     z-index: -1;
+} 
+.door_left {
+    transform-origin: left;
+    border: 3px solid rgb(80, 11, 34);
+    background-color: rgb(150, 15, 76);
+    width: 300px;
+    height: 300px;
+  }
+.door_right {
+    transform-origin: right;
+    border: 3px solid rgb(80, 11, 34);
+    background-color: rgb(150, 15, 76);
+    width: 300px;
+    height: 300px;
+}
+.wrap:hover > .door_left {
+    transform: rotateY(50deg);
+  }
+  
+  .wrap:hover > .door_right {
+    transform: rotateY(-50deg);
+  } */
+
+  /* 3-е задние домашки */
+/* body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.section{
+    display: flex;
+  align-items: center;
+  width: 400px;
+  outline: 2px solid teal;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+  background-size: 50%;
+  transition: filter 0.3s;
+  overflow: hidden;
+}
+.section:hover {
+    filter: grayscale(50%);
+}
+.section:hover img {
+    transform: scale(1.2);
+}
+p {
+    width: 50%;
+    text-align: center;
+}
+.img {
+    width: 50%;
+    height: 100%;
+}
+img {
+    display: block;
+    transition: transform 0.3s;
+    overflow: hidden;
+} */
